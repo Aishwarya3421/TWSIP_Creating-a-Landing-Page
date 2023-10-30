@@ -29,4 +29,4 @@ Feel free to explore the repository and the projects to gain insights into my we
 
 ## Contact Information
 
-If you have any questions or would like to discuss my projects further, please feel free to reach out to me at [your-email@example.com].
+If you have any questions or would like to discuss my projects further, please feel free to reach out to me at [chauhanaishwarya753@gmail.com].
