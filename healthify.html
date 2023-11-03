@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthify - Be a Better You</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=EB+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=EB+Garamond:ital,wght@1,500&family=Outfit&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="search-container">
+                <form action="#" method="get">
+                    <input type="text" placeholder="Search here" name="search">
+                </form>
+            
+        </div>
+        <div class="navigation">
+            <!-- Navigation content here -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="main-section">
+        <h1>healthify</h1>
+        <h2>Wellness for life, not just for a season</h2>
+    </section>
+    <!-- Quote section with a motivational quote and event information -->
+        <div class="quote-section">
+            <span class="quote-mark">“</span>
+            <div class="quotation"> 
+                <span class="quote-text"><h5>The first wealth is health</h5></span>
+                <h6 class="quote-author">~ Ralph Waldo Emerson</h6>
+            </div>
+            <span class="quote-mark">”</span>
+
+            <div class="event-info">
+                <section  class="backgroundimg">
+                    <div class="scrolling-text"><h2> JOIN OUR VIRTUAL EVENT ! </h2></div>
+                    <h5>At Healthify, we believe in fostering a holistic approach to wellness, emphasizing the vital connection between a healthy body and a healthy mind. Following our events, if individuals aspire to enhance their lifestyle and delve deeper into the realm of wellness, we offer a comprehensive program led by certified medical experts, including experienced yoga instructors and qualified dieticians. This program is meticulously designed to guide individuals on their journey toward adopting a healthier lifestyle.</h5>
+                    <h3>What you will learn?</h3>
+                    <ul class="creative-list">
+                        <li><a href="#">Understanding Health: Explore the fundamentals of holistic well-being, emphasizing the interconnectedness of physical and mental health, and how it contributes to a fulfilling life.</a></li>
+                        <li><a href="#">Importance of Health: Delve into the significance of prioritizing one's health, shedding light on the long-term benefits and the positive impact it has on overall quality of life.</a></li>
+                        <li><a href="#">Achieving Optimal Health: Discover practical insights and strategies to achieve a balanced and sustainable lifestyle, focusing on the integration of nutrition, fitness, and mindfulness practices.</a></li>
+                        <li><a href="#">Diverse Expert-led Programs: Engage with diverse programs curated and led by renowned experts, offering personalized guidance and support to help individuals reach their fitness goals effectively and efficiently.</a></li>
+                        <li><a href="#">Progress Tracking and Goal Achievement: Utilize our user-friendly website and app to track your health journey, set achievable goals, and witness tangible progress, fostering motivation and empowerment to lead a healthier and more fulfilling life.</a></li>
+                    </ul>  
+                </section>
+                <button onclick="openDialog()" class="register-button">Register</button>
+            
+                <div id="registrationDialog" class="registration-dialog" style="display: none;">
+                    <form action="#" method="post" class="registration-form">
+                        <label for="firstName">First Name<span class="asterisk">*</span></label>
+                        <input type="text" id="firstName" name="firstName" required>
+                        <label for="lastName">Last Name<span class="asterisk">*</span></label>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <label for="email">Email<span class="asterisk">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="timeSlot">Time Slot</label>
+                        <select id="timeSlot" name="timeSlot">
+                            <option value="6-7pm">6-7pm</option>
+                            <option value="10-11am">10-11am</option>
+                        </select>
+                        <input type="submit" value="Register" onclick="showMessage()">
+                    </form>
+                </div>
+            
+                <div id="message" style="display: none;">Check your mail.</div>
+                <script>
+                    function openDialog() {
+                        var dialog = document.getElementById('registrationDialog');
+                        dialog.style.display = 'block';
+                    }
+                
+                    function showMessage() {
+                        var dialog = document.getElementById('registrationDialog');
+                        var message = document.getElementById('message');
+                        var firstName = document.getElementById('firstName').value;
+                        var lastName = document.getElementById('lastName').value;
+                        var email = document.getElementById('email').value;
+                
+                        if (firstName !== '' && lastName !== '' && email !== '') {
+                            dialog.style.display = 'none';
+                            message.style.display = 'block';
+                        } else {
+                            alert('Please fill in all required fields.');
+                        }
+                    }
+                    // JavaScript functions for the registration process
+
+                </script>   
+            </div>
+             <!-- Explore section with program topics -->
+            <div class="explore-section">
+                <h2>Explore more about our Programs</h2>   
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="Nutrition.jpg" alt="Nutrition">
+                
+                        </div>
+                        <div class="card">
+                            <img src="Fitness.jpg" alt="Fitness">
+                            
+                        </div>
+                        <div class="card">
+                            <img src="Workout.jpg" alt="Workout">
+                          
+                        </div>
+                        <div class="card">
+                            <img src="Happiness.jpg" alt="Happiness">
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+          <!--Footer links-->
+    <footer>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Medical Expert Board</a></li>
+                    <li><a href="#">Editorial Process</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>  
+    </footer>
+
+</body>
+</html>

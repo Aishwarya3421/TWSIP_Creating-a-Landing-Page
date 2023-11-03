@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+ scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1d3965; /* Dark blue */
+    padding: 10px;
+    overflow: hidden;
+}
+
+.navigation {
+    float: right;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: #FFFFFF; /* White */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.navigation li a:hover {
+    background-color: rgb(135, 235, 230); 
+    border-radius: 7px;
+}
+
+.search-container {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+}
+
+.main-section {
+    background: linear-gradient(to bottom, #87CEEB, #90EE90); /* Sky blue, little green, grey */
+    text-align: left;
+    padding: 30px;
+}
+
+.quote-section {
+    background: linear-gradient(to bottom, #1c3359, #b799ebbe);
+    padding: 18px;
+    text-align: center;
+}
+
+.quotation {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 10px;
+}
+
+.quote-mark {
+    color: orange;
+    font-size: 60px;
+}
+
+h2 span{
+    font-size: 22px;
+}
+
+.quote-author {
+    color: #fff;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.register-button {
+    background-color: #1c3359;
+    color: #fff;
+    height: 10%;
+    width: 12%;
+    font-size: large;
+    padding: 10px 10px;
+    margin-left: 13%;
+    margin:2% 2%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registration-dialog {
+    background: linear-gradient(to bottom, #A6D0DD, #dcafef);
+    border-radius: 15px;
+    padding: 30px;
+    color: #fff;
+    display: none;
+    width: 350px;
+    height: 500px;
+    margin-left: 38%;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+label {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:#1d3965;
+}
+
+input, select {
+    padding: 8px;
+    font-size: larger;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.asterisk {
+    color: red;
+}
+
+#message {
+    color: #1c3359;
+    display: none;
+}
+
+h1 {
+    color: #1c3359; 
+    font-size: 60px;
+    font-style: Monospace;
+    font-weight: bold;
+}
+.event-info h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h2{
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Outfit', sans-serif;
+     margin-top: 10px;
+}
+.event-info h3{
+    color: #d5caf4;
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'EB Garamond', serif;
+    margin-top: 10px;
+}
+
+.event-info h5{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    text-align: center;
+    margin:auto;
+    padding: 7.5%;
+}
+.event-info{
+    margin: 0 auto;
+}
+
+.backgroundimg{
+    background-image: url(backgroundimg.png);
+    background-position:455px 150px;
+    background-size: 28%;
+    background-repeat: no-repeat;
+    padding: 60px;
+    
+}
+
+.scrolling-text :hover {
+    transform: scale(1.1);
+    color: orange;
+  }
+  
+.creative-list {
+    list-style: none;
+    padding: 100px;
+    
+    
+}
+
+.creative-list li {
+    background: #f9f9f9;
+    font-size: 18px;
+    margin: 15px 0;
+    padding: 12px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.creative-list li a {
+    text-decoration: solid;
+    color: #285087;
+}
+
+.creative-list li:hover {
+    background: #fff1f1;
+    font-weight: 750;
+    transform: scale(1.1);
+}
+.registration-dialog h4{
+    color: #333;
+    font-size: 30px;
+    font-style: Monospace;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px; 
+}
+
+.first-word{
+    
+    font-size: 20px;
+    font-style: Monospace;
+    font-weight: bold;
+
+}
+.organization-info {
+    color: #080331e3;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 6%;
+
+}
+.explore-section{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.explore-section h2{
+    font-size: larger;
+}
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 30%;
+    height: 250px;
+    background-color:#FFFFFF;
+    border: 2px solid #D3D3D3;
+    border-radius: 10px;
+    padding: 30px;
+    text-align:center;
+    margin: 40px 40px;
+    margin-bottom: 100px;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-heading{
+    float: bottom;
+}
+.card:hover {
+    transform: scale(1.1); /* Scale the card on hover */
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1d3965;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white 
+    
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
